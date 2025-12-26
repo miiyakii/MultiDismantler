@@ -7,4 +7,4 @@ RUN pip3 install -U --no-cache-dir \
     networkx==2.5.1
 
 COPY postInstall /
-RUN /postInstall
+RUN chmod +x /postInstall && /postInstall
